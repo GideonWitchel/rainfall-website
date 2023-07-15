@@ -1,8 +1,8 @@
 @font-face { font-family: SophieFancy; src: url('Sophie Fancy.otf'); }
 
 body{
-    color: white;
-    background-color: dimgray;
+    color: black;
+    background-color: darkgray;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -16,10 +16,18 @@ body{
     align-items:center;
     flex: 1;
 }
+#content-left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 .navbar {
     background: rgb(240,240,240);
     background: linear-gradient(90deg, rgba(240,240,240,1) 0%, rgba(28,181,224,1) 75%, rgba(0,24,245,1) 100%);
     font-size: 1.5vw;
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 .navbar-brand{
     font-family: SophieFancy, Oswald, Times, serif;
@@ -36,12 +44,28 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.big{
+.big-static{
     font-size: 3.5vw;
     margin: 0 50px;
 }
-.medium {
+.big{
+    font-size: 6em;
+    margin: 0 50px;
+    line-height: 100%;
+    padding: 30px 0 10px 0;
+}
+.medium-static {
     font-size: 2vw;
+    margin: 0 50px;
+}
+.medium {
+    font-size: 4em;
+    margin: 0 50px;
+    line-height: 100%;
+    padding: 30px 0 10px 0;
+}
+.small {
+    font-size: 2em;
     margin: 0 50px;
 }
 .nav-link {
@@ -50,19 +74,25 @@ body{
     margin: 0 10px;
     color: black;
 }
+a{
+    color: inherit;
+}
 a:hover{
-    color: DimGray;
+    color: inherit;
 }
 p{
     font-family: Oswald, Times, serif;
 }
 .footer {
+    background-color: dimgray;
+    color: white;
     position: sticky;
     bottom: 0;
     display: flex;
     justify-content: center;
     padding: 10px 0;
     font-family: Times, serif;
+    margin: 20px 0 0 0;
 }
 .noMargin {
     margin: 0;
@@ -85,7 +115,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: dimgray;
+    background: darkgray;
     background-position: center;
     background-repeat: no-repeat;
 }
