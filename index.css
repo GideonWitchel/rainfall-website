@@ -1,0 +1,121 @@
+@font-face { font-family: SophieFancy; src: url('Sophie Fancy.otf'); }
+
+body{
+    color: white;
+    background-color: #454a4f;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    flex: 1;
+}
+.navbar {
+    background: rgb(240,240,240);
+    background: linear-gradient(90deg, rgba(240,240,240,1) 0%, rgba(28,181,224,1) 75%, rgba(0,24,245,1) 100%);
+    font-size: 1.5vw;
+}
+.navbar-brand{
+    font-family: SophieFancy, Oswald, Times, serif;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 0 0 0 30px;
+    font-size: 2em;
+}
+.nav-item {
+    padding: 0 0.5vw;
+}
+.rainfall {
+    background: linear-gradient(90deg, #0018f5 0%, #1CB5E0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.big{
+    font-size: 3.5vw;
+    margin: 0 50px;
+}
+.medium {
+    font-size: 2vw;
+    margin: 0 50px;
+}
+.nav-link {
+    font-family: SophieFancy, Oswald, Times, serif;
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+}
+a:hover{
+    color: DimGray;
+}
+p{
+    font-family: Oswald, Times, serif;
+}
+.footer {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-family: Times, serif;
+}
+.noMargin {
+    margin: 0;
+}
+.links{
+    margin: 30px 0 0 0;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    flex: 1;
+}
+.tab{
+    width: 50%;
+    text-align: center;
+    transition: all .2s ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: dimgray;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tab a {
+    color: black;
+    font-size: 5em;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 0 20px;
+    border-radius: 1000px;
+    text-decoration:none;
+}
+.links:hover .tab {
+    transform: scale(0.9);
+}
+.links:hover .tab:hover {
+    transform: scale(1.1);
+}
+#profile{
+    background-image: url("https://ucnj.org/wp-content/uploads/2021/08/Rain-cloud-storm.png");
+    transform-origin: top left;
+}
+#product{
+    background-image: url("https://cdn.cancercenter.com/-/media/ctca/images/others/blogs/2018/02-february/07-blog-cancer-cells-l.jpg");
+    transform-origin: top right;
+}
+#technology{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Alfa_beta_gamma_radiation_penetration.svg/1200px-Alfa_beta_gamma_radiation_penetration.svg.png");
+    transform-origin: bottom left;
+}
+#regulation{
+    background-image: url("https://media.istockphoto.com/id/1395393300/vector/product-quality-concept.jpg?s=612x612&w=0&k=20&c=Qk6XnEvwAWxF6pCHjg5NZ1dztA3nfUf7PfODUA_cjVU=");
+    transform-origin: bottom right;
+}
